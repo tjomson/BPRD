@@ -103,6 +103,7 @@ let e8 = Sub(Var "v", Add(Var "w", Var "z"))
 let e9 = Mul (CstI 2, Sub (Var "v", Add (Var "w", Var "z")))
 let e10 = Add (Var "x", Add (Var "y", Add (Var "z", Var "v")))
 
+// Exercise 1.3
 let rec fmt aex : string =
     match aex with
     | CstI a -> string a
@@ -156,5 +157,3 @@ let rec diff aexp var =
     | Mul (a, b) -> Mul (diff a var, diff b var)
 
 let diffTest = Add(CstI 4, Mul (CstI 3, Var ("x")))
-
-

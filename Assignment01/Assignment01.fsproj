@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Include="Program.fs" />
+    <Compile Include="part2.1-2.3.fs" />
   </ItemGroup>
 
 </Project>
